@@ -1,0 +1,775 @@
+body{
+    background-color: #242627;
+    width: 100%;
+    height: auto;
+}
+.fixed
+{
+    position: fixed;
+    right: 0;
+    top: 20%;
+    background-color: red;
+    font-size:300%;
+    padding: 0.1%;
+    border-radius: 10%;
+}
+.fixed a{
+    color: black;
+}
+.navbar {
+display: flex;
+align-items: center;
+padding: 10px 15%;
+background-color: rgba(20, 21, 22, 0.637);
+height: 100px;
+}
+a {
+text-decoration: none;
+}
+.navbar .title
+{
+color: red;
+font-size: 200%;
+font-family: Arial, Helvetica, sans-serif;
+} 
+.navbar-logo img {
+width: 100px;
+}
+
+.menu-icon {
+font-size: 35px;
+cursor: pointer;
+margin: 0 20px;
+padding: 45px 0;
+}
+#icon{
+float: left;
+font-size: xx-large;
+color: white;
+cursor: pointer;
+position: relative;
+} 
+.search-bar {
+width: 50%;
+display: flex;
+align-items: center;
+margin-right: 10px;
+}
+.search{
+width: 100%;
+padding: 5px 5px 5px 0;
+background-color: #242627;
+font-size:x-large;
+border: none;
+border-radius: none;
+color: white;
+}
+.search-bar button {
+height: 37px;
+padding: 5px 0;
+background-color: #242627;
+font-size: x-large;
+border: none;
+cursor: pointer;
+}
+#cart
+{
+font-size: 170%;
+color:red;
+margin: 25px 25px;
+cursor: pointer;
+}
+#user
+{
+font-size: 170%;
+color:red;
+margin: 25px 0;
+cursor: pointer;
+}
+.search-bar button:hover {
+background-color: #242627;
+}
+.search-bar input{
+padding: 5px;
+border-radius: 5px;
+border: 1px solid gray;
+}
+
+.user-icon,.cart-icon {
+font-size: 20px;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: rgba(20, 21, 22, 0.637);
+padding: 10px;
+top: 120px;
+left: 20%;
+width: 60%;
+margin-top: 10px; 
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown-content a {
+display: block;
+padding: 5px 10px;
+text-decoration: none;
+color: #333;
+float: left;
+color: white;
+}
+.dropdown-content a:hover{
+background-color: grey;
+}
+.menu-icon:hover .dropdown-content {
+display: block;
+}
+.dropdown-item {
+padding: 5px 0;
+}
+/*====================================================================================================================================*/
+.main{
+    width: 80%;
+    margin: 75px auto;
+    background-color: rgba(20, 21, 22, 0.637);
+    display: flex;
+    border-radius: 10px;
+}
+.left{
+    width: 45%;
+}
+.left img{
+    width: 100%;
+}
+.purchase{
+    display: flex;
+}
+.mua{
+    margin: 20px auto;
+    width: 40%;
+    background-color: rgb(167, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 100px;
+    justify-content: center;
+    display: flex;
+    font-size: larger;
+}
+.mua a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+}
+.giohang{
+    margin: 20px auto;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 100px;
+    border: 1px rgb(231, 0, 0) solid;
+    justify-content: center;
+    display: flex;
+    font-size: larger;
+    background-color:none;
+}
+.giohang a{
+    color: rgb(219, 0, 0);
+}
+.right{
+    width: 55%;
+}
+.tuade{
+    padding: 0 20px;
+}
+.tuade p{
+    font-size: 200%;
+    color: rgb(212, 212, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chitiet{
+    font-size: 150%;
+    padding: 0 5%;
+}
+.chitiet p{
+color:rgb(212, 212, 212);
+}
+.chitiet a{
+    color:rgb(86, 86, 252);
+}
+#name{
+    color:white;
+}
+.gia{
+    display: flex;
+    padding: 0 5%;
+    float: left;
+}
+.giamgia{
+    text-decoration: line-through;
+    color: gray;
+    margin: auto;
+}
+.gia h3{
+    font-size: 300%;
+    color: rgb(230, 62, 62);
+}
+.sale-box{
+    border: solid red 1px;
+    margin: auto 25px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 150%;
+}
+.tanggiam{
+    padding: 0 1%;
+    display: flex;
+    height: auto;
+    text-align: center;
+    width: 10%;
+    border: 1px solid rgb(212, 212, 212);
+    margin: 0 2%;
+    border-radius: 5px;
+}
+#value {
+    margin: 0 10px;
+  }  
+.tanggiam button{
+    width: 50%;
+    padding: 0 5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:rgb(212, 212, 212);
+}
+.tanggiam span{
+    font-size:200%;
+    color: white;
+}
+.sl{
+    display: flex;
+}
+.sl p{
+    color:rgb(212, 212, 212);
+    font-size: 150%;
+    margin: 0 5%;
+}
+/*đăng ký gmail*/
+.dkgmail{
+    width: 80%;
+    background-color: grey;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.gmail{
+    color:white;
+    font-size: 150%;
+    display: flex;
+    align-items:center;
+    padding: 0 5% 0 0;
+}
+#gmail{
+    align-items: center;
+    display: flex;
+    width: 40%;
+}
+#gmail input{
+    width: 100%;
+    padding: 10px;
+    background-color: #242627;
+    font-size:x-large;
+    border: none;
+    border-radius: none;
+    color: white;
+}
+#gmail button{
+    background-color: rgb(245, 147, 0);
+    color: white;
+    padding: 15px;
+    width: 20%;
+}
+/*thông tin sản phẩm*/
+.ttsp{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(20, 21, 22, 0.637);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    list-style-type: none;
+    padding: 2% 0;
+    color:rgba(212, 212, 212, 0.541);
+    font-size: 150%;
+}
+.thongtintrai
+{
+    width: 30%;
+    padding: 1% 0;
+}
+.thongtinphai
+{
+    width: 30%;
+    padding: 1% 0;
+}
+.thongtinphai ul li{
+    color:rgb(212, 212, 212);
+}
+.thongtinphai ul li a{
+    color:rgb(86, 86, 252);
+}
+.ttchitiet{
+    width: 100%;
+    padding: 0 2%;
+}
+.ttchitiet p{
+    color: rgb(206, 206, 206);
+    font-size: 150%;
+    text-align: justify;
+}
+/* danh sách sản phẩm */
+.dssanpham {
+margin-top: 75px;
+margin-left:auto ;
+margin-right: auto;
+width: 80%;
+background-color: rgba(20, 21, 22, 0.637);
+padding-bottom: 100px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+position: relative;
+}
+
+.the {
+width: 16%;
+font-size: 120%;
+border: grey 1px solid;
+margin: 10px;
+text-align: center;
+}
+
+.the img {
+width: 100%;
+}
+
+.the p {
+color: white;
+padding: 0 5px;
+}
+
+.the a h3 {
+margin: 0 10px;
+float: left;
+color: rgb(230, 62, 62);
+}
+.dssanpham h1 {
+color: white;
+border-bottom: 1px solid #333;
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+margin-left: 30px;
+}
+.dssanpham h2{
+  position: absolute;
+  color: rgb(168, 2, 2);
+  border-radius: 5px;
+  border: red solid 1px;
+  bottom: 0;
+  padding: 10px;
+  right: 45%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sale{
+    text-decoration: line-through;
+    text-align: left;
+    color: gray;
+}
+#star{
+    color: yellow;
+}
+.preview{
+    float: left;
+    margin: 0;
+}
+@media (max-width: 768px){
+    .fixed
+    {
+        display: none;
+    }
+    #none{
+        display: none;
+    }
+    body{
+        background-color: #242627;
+        height: auto;
+    }
+    .temp{
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(20, 21, 22, 0.637);
+        width: 100%;
+        margin: 0;
+      }
+      a{
+          text-decoration: none;
+      }
+      .navbar .title {
+        color: red;
+        font-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      
+      .navbar-logo img {
+        width: 50px; 
+      }
+      
+      .menu-icon {
+        font-size: 30px; 
+        margin: 0 10px; 
+        padding: 40px 0; 
+      }
+      
+      .search-bar {
+        width: 40%; 
+        display: flex;
+      }
+      
+      .search {
+        width: 100%;
+        background-color: #242627;
+        font-size: large; 
+        border: none;
+        border-radius: 5px; 
+        color: white;
+      }
+      
+      .search-bar button {
+        height: 35px; 
+        background-color: #242627;
+        font-size: large; 
+        border: none;
+        cursor: pointer;
+      }
+      
+      #cart {
+        font-size: 100%; 
+        color: red;
+        margin: 15px 15px; 
+        cursor: pointer;
+      }
+      
+      #user {
+        font-size: 100%; 
+        color: red;
+        margin: 15px 0; 
+        cursor: pointer;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(20, 21, 22, 0.637);
+        padding: 10px;
+        top: 80px; 
+        left: 10%; 
+        width: 80%; 
+        margin-top: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .dropdown-content a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #333;
+        float: left;
+        color: white;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: grey;
+      }
+      
+      .menu-icon:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-item {
+        padding: 5px 0;
+      }
+      .main{
+        width: 100%;
+        margin: 75px auto;
+        background-color: rgba(20, 21, 22, 0.637);
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        
+    }
+    .left{
+        width: 100%;
+    }
+    .left img{
+        width: 100%;
+    }
+    .purchase
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mua{
+        margin: 20px auto;
+        width: 100%;
+        background-color: rgb(167, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 100px;
+        justify-content: center;
+        font-size: larger;
+    }
+    .mua a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+    }
+    .giohang{
+        margin: 20px auto;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 100px;
+        border: 1px rgb(231, 0, 0) solid;
+        justify-content: center;
+        font-size: larger;
+        background-color:none;
+    }
+    .giohang a{
+        color: rgb(219, 0, 0);
+    }
+    .right{
+        width: 100%;
+    }
+    .tuade{
+        padding: 0 20px;
+    }
+    .tuade p{
+        font-size: 150%;
+        color: rgb(212, 212, 212);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .chitiet{
+        
+        font-size: 150%;
+        padding: 0 5%;
+    }
+    .chitiet p{
+    color:rgb(212, 212, 212);
+    }
+    .chitiet a{
+        color:rgb(86, 86, 252);
+    }
+    #name{
+        color:white;
+    }
+    .gia{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        float: left;
+    }
+    .giamgia{
+        display: none;
+        text-decoration: line-through;
+        color: gray;
+        margin: auto;
+    }
+    .gia h3{
+        font-size: 300%;
+        color: rgb(230, 62, 62);
+    }
+    .sale-box{
+        display: none;
+        border: solid red 1px;
+        margin: auto 25px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        font-size: 150%;
+    }
+    .tanggiam{
+        display: flex;
+        text-align: center;
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 5px;
+        width: 15%;
+    }
+    #value {
+        
+        margin: 0 10px;
+      }  
+    .tanggiam button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        color:rgb(212, 212, 212);
+    }
+    .tanggiam span{
+        
+        font-size:200%;
+        color: white;
+    }
+    .sl{
+        display: flex;
+    }
+    .sl p{
+        color:rgb(212, 212, 212);
+        font-size: 150%;
+    }
+    /*đăng ký gmail*/
+    .dkgmail{
+        width: 100%;
+        background-color: grey;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .gmail{
+        color:white;
+        font-size: 80%;
+        display: flex;
+        align-items:center;
+    }
+    #gmail{
+        align-items: center;
+        display: flex;
+        width: 40%;
+    }
+    #gmail input{
+        width: 40%;
+        padding: 10px;
+        background-color: #242627;
+        font-size:40%;
+        border: none;
+        border-radius: none;
+        color: white;
+    }
+    #gmail button{
+        height: 40%;
+        background-color: rgb(245, 147, 0);
+        color: white;
+        font-size:40%;
+    }
+    /*thông tin sản phẩm*/
+    .ttsp{
+        width: 100%;
+        background-color: rgba(20, 21, 22, 0.637);
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul li{
+        list-style-type: none;
+        padding: 2% 0;
+        color:rgba(212, 212, 212, 0.541);
+        font-size: 100%;
+    }
+    .thongtintrai
+    {
+        width: 50%;
+        padding: 1% 0;
+    }
+    .thongtinphai
+    {
+        width: 50%;
+        padding: 1% 0;
+    }
+    .thongtinphai ul li{
+        color:rgb(212, 212, 212);
+    }
+    .thongtinphai ul li a{
+        color:rgb(86, 86, 252);
+    }
+    .ttchitiet{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .ttchitiet p{
+        color: rgb(206, 206, 206);
+        font-size: 100%;
+        text-align: justify;
+    }
+
+    .dssanpham {
+        margin-top: 75px;
+        width: 100%;
+        background-color: rgba(20, 21, 22, 0.637);
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        }
+        
+        .the {
+        width: 18%;
+        font-size: 90%;
+        border: grey 1px solid;
+        text-align: center;
+        margin: 0;
+        }
+        
+        .the img {
+        width: 100%;
+        }
+        
+        .the p {
+        color: white;
+        }
+        
+        .the a h3 {
+        margin: 0 10px;
+        float: left;
+        color: rgb(230, 62, 62);
+        }
+        .dssanpham h1 {
+        color: white;
+        border-bottom: 1px solid #333;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin-left: 30px;
+        }
+        .dssanpham h2{
+          margin: auto;
+          color: rgb(168, 2, 2);
+          border-radius: 5px;
+          border: red solid 1px;
+          bottom: 0;
+          padding: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .sale{
+            text-decoration: line-through;
+            text-align: left;
+            color: gray;
+        }
+        #star{
+            color: yellow;
+        }
+        .preview{
+            float: left;
+            margin: 0;
+        }
+}

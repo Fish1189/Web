@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="giohang.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Giỏ Hàng</title>
+    </head>
+</head>
+<body>
+  <div class="fixed">
+    <a href="thongtin.html"><i class="fa-solid fa-phone"></i></a> 
+   </div>
+    <div class="navbar">
+      <a class="navbar-logo" href="index.html">
+        <img src="logo.jpg">
+      </a>
+      <a href="index.html"><p class="title">FStore.com</p></a>
+      <div class="menu-icon"><i class="fa-solid fa-bars" id="icon"></i>
+        <div class="dropdown-content">
+          <a href="danhsachsanpham.html">Sách Trong Nước</a>
+          <a href="danhsachsanpham.html">Sách Nước Ngoài</a>
+          <a href="danhsachsanpham.html">Tiểu Thuyết</a>
+          <a href="danhsachsanpham.html">Light Novel</a>
+          <a href="danhsachsanpham.html">Figure</a>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input class="search" type="text" placeholder="Bạn muốn tìm sách gì......">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <div class="cart-icon"><a href="giohang.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a></div>
+      <div class="user-icon"><a href="dangky.html"><i class="fa-solid fa-user" id="user"></i></a></div>
+    </div>
+    <p class="text" id="none">GIỎ HÀNG (3 sản phẩm)</p>
+    <div class="thongtin" id="none">
+        <input type="checkbox" checked>
+        <p class="chon">Chọn tất cả (3 sản phẩm)</p>
+        <p class="sl">Số Lượng</p>
+        <p class="tt">Thành Tiền</p>
+    </div>
+    <div class="main">
+      <div class="danhsach">
+        <div class="donhang">
+            <input type="checkbox" checked>
+            <div class="anh"><img src="giohang/giohang1.jpg"></div>
+            <div class="tendonhang">
+                <div class="ten">
+                    <p>Chuyện Tình Thanh Xuân Bi Hài Của Tôi Quả Nhiên Là Sai Lầm - Tập 14 - Bản Đặc Biệt - Tặng Kèm Postcard + 2 Flyer + 2 Thẻ Nhựa</p>
+                </div>
+                <div class="gia">
+                    <p class="giam">152.150 đ&nbsp;</p>
+                    <p class="goc">&nbsp;179.000 đ</p>
+                </div>
+            </div>
+           <div class="tanggiam">
+                    <button id="btn-decrease" class="btn decrease">-</button>
+                    <span id="value">1</span>
+                    <button id="btn-increase" class="btn increase">+</button>
+            </div>
+            <div class="thanhtien">
+              <span id="tong">152.150</span><p>&nbsp;đ</p>
+            </div>
+            <div class="trashcan"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="donhang">
+          <input type="checkbox" checked>
+          <div class="anh"><img src="giohang/giohang3.jpg"></div>
+          <div class="tendonhang">
+              <div class="ten">
+                  <p>Thám Tử Lừng Danh Conan - Tập 97 (Tái Bản 2023)</p>
+              </div>
+              <div class="gia">
+                  <p class="giam">22.500 đ&nbsp;</p>
+                  <p class="goc">&nbsp;25.000 đ</p>
+              </div>
+          </div>
+         <div class="tanggiam">
+                  <button id="btn-decrease" class="btn decrease">-</button>
+                  <span id="value">1</span>
+                  <button id="btn-increase" class="btn increase">+</button>
+          </div>
+          <div class="thanhtien">
+            <span id="tong">22.500</span><p>&nbsp;đ</p>
+          </div>
+          <div class="trashcan"><i class="fa-solid fa-trash"></i></div>
+      </div>
+      <div class="donhang">
+        <input type="checkbox" checked>
+        <div class="anh"><img src="giohang/giohang2.jpg"></div>
+        <div class="tendonhang">
+            <div class="ten">
+                <p>五等分の花嫁 フルカラー版(7) (KCデラックス) - Go Toubun No Hanayome Furu Karaban 7</p>
+            </div>
+            <div class="gia">
+                <p class="giam">213.300 đ&nbsp;</p>
+                <p class="goc">&nbsp;237.000 đ</p>
+            </div>
+        </div>
+       <div class="tanggiam">
+                <button id="btn-decrease" class="btn decrease">-</button>
+                <span id="value">1</span>
+                <button id="btn-increase" class="btn increase">+</button>
+        </div>
+        <div class="thanhtien">
+          <span id="tong">213.300</span><p>&nbsp;đ</p>
+        </div>
+        <div class="trashcan"><i class="fa-solid fa-trash"></i></div>
+    </div>
+      </div>
+      <div class="right">
+        <div class="khuyenmai">
+          <div class="tenkhuyenmai">
+            <i class="fa-solid fa-ticket"></i>
+            <p>KHUYẾN MÃI</p>
+          </div>
+          <div class="ttkhuyenmai">
+            <div class="anhkm">
+              <i class="fa-solid fa-ticket"></i>
+            </div>
+            <div class="chukhuyenmai">
+              <p>MÃ GIẢM 50K - ÁP DỤNG CHO MỌI ĐƠN HÀNG</p>
+              <p class="sub">ÁP DỤNG TỪ THỨ 2 ĐẾN THỨ 4 HÀNG TUẦN</p>
+              <button class="apdung">ÁP DỤNG</button>
+            </div>
+          </div>
+          <div class="ttkhuyenmai">
+            <div class="anhkm">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="chukhuyenmai">
+              <p>FREESHIP - ÁP DỤNG CHO ĐƠN HÀNG TỪ 150K</p>
+              <button class="apdung">ÁP DỤNG</button>
+            </div>
+          </div>
+          <div class="ttkhuyenmai">
+            <div class="anhkm">
+              <i class="fa-solid fa-ticket"></i>
+            </div>
+            <div class="chukhuyenmai">
+              <p>MÃ GIẢM 150K - ÁP DỤNG CHO MỌI ĐƠN HÀNG</p>
+              <p class="sub">ÁP DỤNG CHỈ THỨ 2</p>
+              <button class="apdung">ÁP DỤNG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+   <div class="thanhtoan">
+     <div class="thanhtien1">
+        <p>Thành Tiền</p>
+        <p class="tien">387.950 đ</p>
+     </div>
+     <div class="tongtien">
+      <p><b>Tổng Số Tiền (Gồm VAT)</b></p>
+      <p class="tien"><b>426.745 đ</b></p>
+     </div>
+     <div class="nutthanhtoan">
+        <button>THANH TOÁN</button>
+     </div>
+   </div>
+  <script src="giohang.js"></script>
+</body>
+</html>
